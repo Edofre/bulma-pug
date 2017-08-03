@@ -1,0 +1,26 @@
+{
+  "name": "bulma-pug",
+  "version": "1.0.0",
+  "description": "Bulma templates converted to pug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edofre/bulma-pug.git"
+  },
+  "keywords": [
+    "Bulma",
+    "Pug"
+  ],
+  "author": "Edo Freriks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edofre/bulma-pug/issues"
+  },
+  "homepage": "https://github.com/Edofre/bulma-pug#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
