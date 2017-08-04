@@ -11,12 +11,32 @@ html
                 nav(class="tabs is-boxed")
                     ul
                         li(class="is-active")
-                            a(href="/")= "Home"
+                            a(href="/")= "Overview"
+                        li
+                            a(href="/")= "Modifiers"
+                        li
+                            a(href="/")= "Grid"
+                        li
+                            a(href="/")= "Layout"
+                        li
+                            a(href="/")= "Form"
+                        li
+                            a(href="/")= "Elements"
+                        li
+                            a(href="/")= "Components"
     nav(class="navbar has-shadow")
         div(class="container")
             div(class="navbar-brand")
-                a(class="navbar-item is-tab" + (active == 'index' ? ' is-active' : ''), href="/")= "Index"
-                a(class="navbar-item is-tab" + (active == 'insert' ? ' is-active' : ''), href="/insert")= "Insert"
+                a(class="navbar-item is-tab" + (active == 'start' ? ' is-active' : ''), href="/overview/start")= "Start"
+                a(class="navbar-item is-tab" + (active == 'customize' ? ' is-active' : ''), href="/overview/customize")= "Customize"
+                a(class="navbar-item is-tab" + (active == 'classes' ? ' is-active' : ''), href="/overview/classes")= "Classes"
+                a(class="navbar-item is-tab" + (active == 'modular' ? ' is-active' : ''), href="/overview/modular")= "Modular"
+                a(class="navbar-item is-tab" + (active == 'responsiveness' ? ' is-active' : ''), href="/overview/responsiveness")= "Responsiveness"
+                a(class="navbar-item is-tab" + (active == 'variables' ? ' is-active' : ''), href="/overview/variables")= "Variables"
+                a(class="navbar-item is-tab" + (active == 'colors' ? ' is-active' : ''), href="/overview/colors")= "Colors"
+                a(class="navbar-item is-tab" + (active == 'functions' ? ' is-active' : ''), href="/overview/functions")= "Functions"
+                a(class="navbar-item is-tab" + (active == 'mixins' ? ' is-active' : ''), href="/overview/mixins")= "Mixins"
+
     body
         section(class="section")
             div(class="container")
