@@ -19,23 +19,69 @@ html
                         li
                             a(href="/layout")= "Layout"
                         li
-                            a(href="/")= "Form"
+                            a(href="/form")= "Form"
                         li
-                            a(href="/")= "Elements"
+                            a(href="/elements")= "Elements"
                         li
-                            a(href="/")= "Components"
+                            a(href="/components")= "Components"
     nav(class="navbar has-shadow")
         div(class="container")
             div(class="navbar-brand")
-                a(class="navbar-item is-tab" + (active == 'start' ? ' is-active' : ''), href="/overview/start")= "Start"
-                a(class="navbar-item is-tab" + (active == 'customize' ? ' is-active' : ''), href="/overview/customize")= "Customize"
-                a(class="navbar-item is-tab" + (active == 'classes' ? ' is-active' : ''), href="/overview/classes")= "Classes"
-                a(class="navbar-item is-tab" + (active == 'modular' ? ' is-active' : ''), href="/overview/modular")= "Modular"
-                a(class="navbar-item is-tab" + (active == 'responsiveness' ? ' is-active' : ''), href="/overview/responsiveness")= "Responsiveness"
-                a(class="navbar-item is-tab" + (active == 'variables' ? ' is-active' : ''), href="/overview/variables")= "Variables"
-                a(class="navbar-item is-tab" + (active == 'colors' ? ' is-active' : ''), href="/overview/colors")= "Colors"
-                a(class="navbar-item is-tab" + (active == 'functions' ? ' is-active' : ''), href="/overview/functions")= "Functions"
-                a(class="navbar-item is-tab" + (active == 'mixins' ? ' is-active' : ''), href="/overview/mixins")= "Mixins"
+                if routeName == 'overview'
+                    a(class="navbar-item is-tab" + (active == 'customize' ? ' is-active' : ''), href="/overview/customize")= "Customize"
+                    a(class="navbar-item is-tab" + (active == 'classes' ? ' is-active' : ''), href="/overview/classes")= "Classes"
+                    a(class="navbar-item is-tab" + (active == 'modular' ? ' is-active' : ''), href="/overview/modular")= "Modular"
+                    a(class="navbar-item is-tab" + (active == 'responsiveness' ? ' is-active' : ''), href="/overview/responsiveness")= "Responsiveness"
+                    a(class="navbar-item is-tab" + (active == 'variables' ? ' is-active' : ''), href="/overview/variables")= "Variables"
+                    a(class="navbar-item is-tab" + (active == 'colors' ? ' is-active' : ''), href="/overview/colors")= "Colors"
+                    a(class="navbar-item is-tab" + (active == 'functions' ? ' is-active' : ''), href="/overview/functions")= "Functions"
+                    a(class="navbar-item is-tab" + (active == 'mixins' ? ' is-active' : ''), href="/overview/mixins")= "Mixins"
+                else if routeName == 'modifiers'
+                    //helpers.pug
+                    //responsive-helpers.pug
+                    //syntax.pug
+                    //typography-helpers.pug
+                else if routeName == 'grid'
+                    //columns.pug
+                    //tiles.pug
+                else if routeName == 'layout'
+                    //container.pug
+                    //footer.pug
+                    //hero.pug
+                    //section.pug
+                else if routeName == 'form'
+                    //checkbox.pug
+                    //files.pug
+                    //general.pug
+                    //input.pug
+                    //radio.pug
+                    //select.pug
+                    //textarea.pug
+                else if routeName == 'elements'
+                    //box.pug
+                    //button.pug
+                    //content.pug
+                    //delete.pug
+                    //icon.pug
+                    //image.pug
+                    //notification.pug
+                    //progress.pug
+                    //table.pug
+                    //tag.pug
+                    //title.pug
+                else if routeName == 'components'
+                    //breadcrumb.pug
+                    //card.pug
+                    //dropdown.pug
+                    //level.pug
+                    //media-object.pug
+                    //menu.pug
+                    //message.pug
+                    //modal.pug
+                    //navbar.pug
+                    //pagination.pug
+                    //panel.pug
+                    //tabs.pug
 
     body
         section(class="section")
