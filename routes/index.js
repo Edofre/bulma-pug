@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('overview/start', {title: 'Start', subtitle: "Bulma templates in pug!"});
+    res.redirect('/overview/start');
 });
 
 module.exports = router;
