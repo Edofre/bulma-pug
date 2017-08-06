@@ -10,6 +10,7 @@ var overviewRoutes = require('./routes/overview');
 var modifierRoutes = require('./routes/modifiers');
 var gridRoutes = require('./routes/grid');
 var layoutRoutes = require('./routes/layout');
+var formRoutes = require('./routes/form');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/overview', overviewRoutes);
 app.use('/modifiers', modifierRoutes);
 app.use('/grid', gridRoutes);
 app.use('/layout', layoutRoutes);
+app.use('/form', formRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
