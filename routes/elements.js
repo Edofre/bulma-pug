@@ -12,7 +12,7 @@ router.get('/box', function (req, res, next) {
 
 router.get('/button', function (req, res, next) {
     active = 'button';
-    res.render('elements/box', {title: 'Button', active: active});
+    res.render('elements/button', {title: 'Button', active: active});
 });
 
 router.get('/content', function (req, res, next) {

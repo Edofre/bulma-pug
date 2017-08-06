@@ -12,6 +12,7 @@ var gridRoutes = require('./routes/grid');
 var layoutRoutes = require('./routes/layout');
 var formRoutes = require('./routes/form');
 var elementRoutes = require('./routes/elements');
+var componentRoutes = require('./routes/components');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/grid', gridRoutes);
 app.use('/layout', layoutRoutes);
 app.use('/form', formRoutes);
 app.use('/elements', elementRoutes);
+app.use('/components', componentRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
