@@ -17,26 +17,26 @@ html
         div(class="container")
             div(class="navbar-brand")
                 if routeName == 'overview'
-                    each menuItem in ['customize', 'classes', 'modular', 'responsiveness', 'variables', 'colors', 'functions', 'mixins']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                    each menuItem in ['start', 'customize', 'classes', 'modular', 'responsiveness', 'variables', 'colors', 'functions', 'mixins']
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'modifiers'
-                    each menuItem in ['helpers', 'responsive-helpers', 'syntax', 'typography-helpers']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                    each menuItem in ['syntax', 'helpers', 'responsive-helpers', 'typography-helpers']
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'grid'
                     each menuItem in ['columns', 'tiles']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'layout'
-                    each menuItem in ['container', 'footer', 'hero', 'section']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                    each menuItem in ['containers', 'hero', 'section', 'footer']
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'form'
-                    each menuItem in ['checkbox', 'files', 'general', 'input', 'radio', 'select', 'textarea']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                    each menuItem in ['general', 'input', 'checkbox', 'radio', 'select', 'textarea', 'file']
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'elements'
                     each menuItem in ['box', 'button', 'content', 'delete', 'icon', 'image', 'notification', 'progress', 'table', 'tag', 'title']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
                 else if routeName == 'components'
                     each menuItem in ['breadcrumb', 'card', 'dropdown', 'level', 'media-object', 'menu', 'message', 'modal', 'navbar', 'pagination', 'panel', 'tabs' ]
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/" + routeName + "/" + menuItem)= menuItem.ucFirst()
     body
         section(class="section")
             div(class="container")

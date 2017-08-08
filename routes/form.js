@@ -38,9 +38,9 @@ router.get('/radio', function (req, res, next) {
     res.render('form/radio', {title: 'radio', routeName: routeName, active: active});
 });
 
-router.get('/files', function (req, res, next) {
-    active = 'files';
-    res.render('form/files', {title: 'files', routeName: routeName, active: active});
+router.get('/file', function (req, res, next) {
+    active = 'file';
+    res.render('form/file', {title: 'file', routeName: routeName, active: active});
 });
 
 module.exports = router;

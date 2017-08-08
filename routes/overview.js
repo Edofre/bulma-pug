@@ -25,32 +25,32 @@ router.get('/classes', function (req, res, next) {
 
 router.get('/modular', function (req, res, next) {
     active = 'modular';
-    res.render('modifiers/modular', {title: 'Modular', routeName: routeName, active: active});
+    res.render('overview/modular', {title: 'Modular', routeName: routeName, active: active});
 });
 
 router.get('/responsiveness', function (req, res, next) {
     active = 'responsiveness';
-    res.render('modifiers/responsiveness', {title: 'Responsiveness', routeName: routeName, active: active});
+    res.render('overview/responsiveness', {title: 'Responsiveness', routeName: routeName, active: active});
 });
 
 router.get('/variables', function (req, res, next) {
     active = 'variables';
-    res.render('modifiers/variables', {title: 'Variables', routeName: routeName, active: active});
+    res.render('overview/variables', {title: 'Variables', routeName: routeName, active: active});
 });
 
 router.get('/colors', function (req, res, next) {
     active = 'colors';
-    res.render('modifiers/colors', {title: 'Colors', routeName: routeName, active: active});
+    res.render('overview/colors', {title: 'Colors', routeName: routeName, active: active});
 });
 
 router.get('/functions', function (req, res, next) {
     active = 'functions';
-    res.render('modifiers/functions', {title: 'functions', routeName: routeName, active: active});
+    res.render('overview/functions', {title: 'functions', routeName: routeName, active: active});
 });
 
 router.get('/mixins', function (req, res, next) {
     active = 'mixins';
-    res.render('modifiers/mixins', {title: 'mixins', routeName: routeName, active: active});
+    res.render('overview/mixins', {title: 'mixins', routeName: routeName, active: active});
 });
 
 

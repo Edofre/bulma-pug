@@ -15,7 +15,7 @@ router.get('/syntax', function (req, res, next) {
 
 router.get('/helpers', function (req, res, next) {
     active = 'helpers';
-    res.render('modifiers/syntax', {title: 'Helpers', routeName: routeName, active: active});
+    res.render('modifiers/helpers', {title: 'Helpers', routeName: routeName, active: active});
 });
 
 router.get('/responsive-helpers', function (req, res, next) {
