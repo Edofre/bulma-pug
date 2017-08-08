@@ -28,14 +28,10 @@ html
         div(class="container")
             div(class="navbar-brand")
                 if routeName == 'overview'
-                    a(class="navbar-item is-tab" + (active == 'customize' ? ' is-active' : ''), href="/overview/customize")= "Customize"
-                    a(class="navbar-item is-tab" + (active == 'classes' ? ' is-active' : ''), href="/overview/classes")= "Classes"
-                    a(class="navbar-item is-tab" + (active == 'modular' ? ' is-active' : ''), href="/overview/modular")= "Modular"
-                    a(class="navbar-item is-tab" + (active == 'responsiveness' ? ' is-active' : ''), href="/overview/responsiveness")= "Responsiveness"
-                    a(class="navbar-item is-tab" + (active == 'variables' ? ' is-active' : ''), href="/overview/variables")= "Variables"
-                    a(class="navbar-item is-tab" + (active == 'colors' ? ' is-active' : ''), href="/overview/colors")= "Colors"
-                    a(class="navbar-item is-tab" + (active == 'functions' ? ' is-active' : ''), href="/overview/functions")= "Functions"
-                    a(class="navbar-item is-tab" + (active == 'mixins' ? ' is-active' : ''), href="/overview/mixins")= "Mixins"
+                    each menuItem in ['customize', 'classes', 'modular', 'responsiveness', 'variables', 'colors', 'functions', 'mixins']
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/"+menuItem)= menuItem.capitalizeFirstLetter()
+
+
                 else if routeName == 'modifiers'
                     //helpers.pug
                     //responsive-helpers.pug

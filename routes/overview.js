@@ -10,12 +10,6 @@ router.get('/', function (req, res, next) {
 
 router.get('/start', function (req, res, next) {
     active = 'start';
-
-    console.log(req.path);
-    console.log(req.route.path);
-    console.log(req.originalUrl);
-    console.log(routeName);
-
     res.render('overview/start', {title: 'Start', routeName: routeName, active: active});
 });
 

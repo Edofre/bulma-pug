@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Route files
 var indexRoutes = require('./routes/index');
 var overviewRoutes = require('./routes/overview');
 var modifierRoutes = require('./routes/modifiers');
@@ -13,6 +14,9 @@ var layoutRoutes = require('./routes/layout');
 var formRoutes = require('./routes/form');
 var elementRoutes = require('./routes/elements');
 var componentRoutes = require('./routes/components');
+
+// Include generic helpers
+var functions = require('./helpers/functions');
 
 var app = express();
 
@@ -28,6 +32,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Use the routes
 app.use('/', indexRoutes);
 app.use('/overview', overviewRoutes);
 app.use('/modifiers', modifierRoutes);
