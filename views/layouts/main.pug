@@ -10,26 +10,15 @@ html
             div(class="container")
                 nav(class="tabs is-boxed")
                     ul
-                        li(class="is-active")
-                            a(href="/")= "Overview"
-                        li
-                            a(href="/modifiers")= "Modifiers"
-                        li
-                            a(href="/grid")= "Grid"
-                        li
-                            a(href="/layout")= "Layout"
-                        li
-                            a(href="/form")= "Form"
-                        li
-                            a(href="/elements")= "Elements"
-                        li
-                            a(href="/components")= "Components"
+                        each navItem in ['overview', 'modifiers', 'grid', 'layout', 'form', 'elements', 'components']
+                            li(class=routeName == navItem ? "is-active" : '')
+                                a(href="/" + navItem)= navItem.ucFirst()
     nav(class="navbar has-shadow")
         div(class="container")
             div(class="navbar-brand")
                 if routeName == 'overview'
                     each menuItem in ['customize', 'classes', 'modular', 'responsiveness', 'variables', 'colors', 'functions', 'mixins']
-                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/"+menuItem)= menuItem.capitalizeFirstLetter()
+                        a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
 
 
                 else if routeName == 'modifiers'
