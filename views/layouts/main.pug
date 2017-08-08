@@ -37,6 +37,7 @@ html
                 else if routeName == 'components'
                     each menuItem in ['breadcrumb', 'card', 'dropdown', 'level', 'media-object', 'menu', 'message', 'modal', 'navbar', 'pagination', 'panel', 'tabs' ]
                         a(class="navbar-item is-tab" + (active == menuItem ? ' is-active' : ''), href="/overview/" + menuItem)= menuItem.ucFirst()
+    body
         section(class="section")
             div(class="container")
                 block content
